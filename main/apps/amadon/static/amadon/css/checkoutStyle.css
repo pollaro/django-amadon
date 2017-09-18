@@ -1,0 +1,10 @@
+*{
+    padding: 1%;
+    line-height: 1.5;
+}
+
+#keepShopping{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}

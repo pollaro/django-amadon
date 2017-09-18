@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>checkout</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'amadon/css/checkoutStyle.css' %}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="{% static 'amadon/js/checkout.js' %}"></script>
+    </head>
+    <body>
+        <h2>Thank you for your business! Come again!</h2>
+        <span>We charged your credit card ${{ request.session.order_price }}</span>
+        <br>
+        <span>You have ordered a total of {{ request.session.orders }} for ${{ request.session.total }} with Amadon.com</span>
+        <br>
+        <span id="keepShopping">Go back</span>
+    </body>
+</html>

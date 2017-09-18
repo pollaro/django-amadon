@@ -1,0 +1,22 @@
+*{
+    padding: 1%;
+}
+
+table{
+    width: 75%;
+    border: solid thin black;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: gray;
+}
+
+tr:nth-child(even){
+    background-color: #b5b5b5;
+}
+
+th,td{
+    /*padding: 1%;*/
+    border: solid thin black;
+}
